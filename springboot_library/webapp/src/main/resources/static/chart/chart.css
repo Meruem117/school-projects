@@ -1,0 +1,26 @@
+.title{
+	font-size: 35px;
+	display: inline-block;
+}
+
+.update{
+	margin-left: 10px;
+}
+
+.update:hover{
+	font-size: 20px;
+	color: blue;
+}
+
+.map{
+	width: 1600px;
+	height: 800px;
+	margin: 30px;
+}
+
+.box{
+	width: 800px;
+	height: 600px;
+	margin: 30px;
+	display: inline-block;
+}

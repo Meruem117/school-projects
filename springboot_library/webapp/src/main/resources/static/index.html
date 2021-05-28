@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>III</title>
+    <link rel="stylesheet" type="text/css" href="index/index.css">
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Condiment'>
+  </head>
+  <body>
+
+    <h1 class="title">Lucky Symbol Library</h1>
+
+    <div class="content login">
+      <form class="box" action="./Login" method="get">
+          <div class="switch">
+            <span id="login" class="active">Login</span>
+            <span>/</span>  
+            <span id="signup">Sign Up</span>
+          </div>
+          <div id="region" class="input">
+            <input type="text" name="region" placeholder="Region">
+          </div>
+          <div id="username" class="input">
+            <input type="text" name="username" placeholder="Username">
+          </div>
+          <div id="password" class="input">
+            <input type="password" name="password" placeholder="Password">
+          </div>
+          <div id="email" class="input">
+            <input type="text" name="email" placeholder="Email">
+          </div>
+          <!-- <input type="submit" name="submit" value="Login"> -->
+          <button class="bt">SUBMIT
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- <a href="regist.html">Regist</a> -->
+      </form>
+    </div>
+
+  </body>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $('#login').click(function(){
+    $('.switch span').removeClass('active');
+    $(this).addClass('active');
+    $(this).parents('.content').removeClass('signup');
+    $(this).parents('.content').addClass('login');
+    // $('form button').text('LOGIN');
+  })
+  $('#signup').click(function(){
+    $('.switch span').removeClass('active');
+    $(this).addClass('active');
+    $(this).parents('.content').removeClass('login');
+    $(this).parents('.content').addClass('signup');
+    // $('form button').text('SIGNUP');
+  })
+
+  $('.input input').on('focus',function(){
+    $(this).parent().addClass('focus');
+  })
+  $('.input input').on('blur',function(){
+    if($(this).val()==='')
+    $(this).parent().removeClass('focus');
+  })
+
+</script>
+
+</html>

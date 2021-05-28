@@ -1,0 +1,35 @@
+{
+	"description" : "基于纯色背景的彩色粒子动画，可与鼠标动态交互。\n\n当你移动鼠标时，背景画布会进行监听和响应，并在以鼠标所在位置为中心的一定范围内，将粒子连接起来。\n\n======2017.7.15 更新======\n新增\"Particle Count\"输入框，现在可以自定义粒子的数量了（0~1000）。\n如果更改数量后壁纸出现卡顿现象，请重新加载壁纸（切换到其他壁纸再切换回来），后续会改进这个问题....\n\n\n\na colorful Interactive particle antimation, bases on pur",
+	"file" : "index.html",
+	"general" :
+	{
+		"properties" :
+		{
+			"customcolor" :
+			{
+				"text" : "Background Color",
+				"type" : "color",
+				"value" : "0.94 0.94 0.9"
+			},
+			"customtext" :
+			{
+				"text" : "Particle Count(0~800)",
+				"type" : "textinput",
+				"value" : "350"
+			},
+			"schemecolor" :
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "粒子动画 / Interactive Particle Animation",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : 971291639
+}

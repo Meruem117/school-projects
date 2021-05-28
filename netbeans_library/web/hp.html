@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Harry Potter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background:#006666;
+                margin: 0;
+            }
+            video{
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                width:auto;
+                height:auto;
+                z-index: -9999;
+                object-fit:fill;
+            }
+            p{margin: 0}
+            a{margin: 0}
+        </style>
+    <div>
+        <video autoplay loop>
+            <source src="picture/video/aa.mp4" type="video/mp4">
+        </video>
+    </div>
+    </head>
+    <body>
+        <form action="book" method="get">
+        <p style="color: wheat;font-size: 100px;font-family: fantasy">Harry Potter</p>
+        <a href="jkr.html" style="color: wheat;font-size: 40px;font-family: fantasy;margin-left: 320px"> J.K. Rolling </a>
+        <p style="text-indent: 2em;color: wheat;font-size: 35px;font-family: cursive">
+            Harry Potter is a series of seven fantasy novels written by the British author J. K. Rowling. </p>
+        <p style="text-indent: 2em;color: wheat;font-size: 35px;font-family: cursive">
+            The books chronicle the adventures of the adolescent wizard Harry Potter and his best friends Ron Weasley and Hermione Granger, 
+            all of whom are students at Hogwarts School of Witchcraft and Wizardry. </p>
+        <p style="text-indent: 2em;color: wheat;font-size: 35px;font-family: cursive">
+            The main story arc concerns Harry's quest to overcome the evil dark wizard Lord Voldemort, whose aim is to subjugate non-magical people, 
+            conquer the wizarding world, and destroy all those who stand in his way, especially Harry Potter.</p>
+        <p style="text-indent: 2em;color: wheat;font-size: 35px;font-family: cursive">
+            Since the 30 June 1997 release of the first novel Harry Potter and the Philosopher's Stone, 
+            the books have gained immense popularity, critical acclaim and commercial success worldwide. The series has also had some share of criticism, 
+            including concern for the increasingly dark tone. </p>
+        <p style="text-indent: 2em;color: wheat;font-size: 35px;font-family: cursive">
+            A series of many genres, including fantasy and coming of age (with elements of mystery, 
+            thriller, and romance), it has many cultural meanings and references. According to Rowling, the main theme is death, 
+            although it is primarily considered to be a work of children's literature. There are also many other themes in the series,
+            such as love and prejudice.</p>
+        <br>
+        <center>
+            <input type="submit" name="act" value="Borrow" style="font-size: 30px;font-family: cursive;" onclick="bClick()">  
+            <input type="submit" name="act" value="Return" style="font-size: 30px;font-family: cursive;margin-left: 30px" onclick="rClick()"> 
+        </center>
+        <input type='hidden' name='bookname' value='Harry Potter - Fiction'>
+        </form>
+        <script>
+    function bClick()
+    {
+	alert("Borrowed successfully");
+    }
+    function rClick()
+    {
+	alert("Returned successfully");
+    }
+</script>
+    </body>
+</html>

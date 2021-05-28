@@ -1,0 +1,206 @@
+html{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('bg.jpg');
+	font-family: sans-serif;
+}
+
+.title{
+	font-family: Condiment, cursive;
+    font-size: 80px;
+    text-align: left;
+    margin: 80px 80px;
+}
+
+.box{
+	width: 400px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #191919;
+	text-align: center;
+	border-radius: 15px;
+	background-image: linear-gradient(to bottom right, #191919 , #1E90FF);
+	opacity: 0.6;
+}
+
+/*.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}*/
+
+.switch {
+	color: #ccc;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+.switch .active{
+	color: rgb(181,154,254);
+}
+
+.input{
+	position: relative;
+	width: 100%;
+	margin: 25px 0;
+	transition: 0.4s;
+	opacity: 1;
+}
+
+.input::after{
+	position: absolute;
+	transition: 0.3s;
+}
+
+.box input[type="text"],.box input[type="password"],.box input[type="email"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	padding: 14px 10px;
+	width: 260px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.4s;
+}
+
+input::-webkit-input-placeholder{
+	color:#98FB98;
+	opacity: 0.8;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus,.box input[type="email"]:focus{
+	width: 360px;
+	border-color: #2ecc71;
+}
+
+.box input[type="submit"]{
+	font-size: 20px;
+	border: 0;
+	background: none;
+	display: inline-block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 10px 10px;
+	width: 100px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+	background-color: #2ecc71;
+}
+
+.login #email,
+.login #region{
+	margin: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.box a{
+	font-size: 20px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	margin-left: 20px;
+	transition: color 0.4s ease;
+}
+
+.box a:hover{
+	color: #2ecc71
+}
+
+button{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.bt{
+	width: 120px;
+	padding: 10px 20px;
+	/*border: 1px solid #2ecc71;*/
+	overflow: hidden;
+	margin-top: 10px;
+	color: #03E9F4; 
+	display: inline-block;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 20px;
+	background:	#4169E1;
+}
+.bt:hover{
+	border-radius: 5px;
+	color: white;
+	box-shadow: 0 0 5px #2ecc71,0 0 25px #2ecc71;
+	background-color: #2ecc71;
+}
+.bt>span{
+	position: absolute;
+}
+.bt>span:nth-child(1){
+	width: 100%;
+	height: 2px;
+	background: -webkit-linear-gradient(left,transparent,#fff); 
+	left: -100%;
+	top: 0;
+	animation: line1 1s linear infinite;
+}
+.bt>span:nth-child(2){
+	width: 2px;
+	height: 100%;
+	background: -webkit-linear-gradient(top,transparent,#fff); 
+	right: 0;
+	top: -100%;
+	animation: line2 1s 0.25s linear infinite;
+}
+.bt>span:nth-child(3){
+	width: 100%;
+	height: 2px;
+	background: -webkit-linear-gradient(left,transparent,#fff); 
+	left: 100%;
+	bottom: 0;
+	animation: line3 1s 0.5s linear infinite;
+}
+.bt>span:nth-child(4){
+	width: 2px;
+	height: 100%;
+	background: -webkit-linear-gradient(top,transparent,#fff); 
+	left: 0;
+	top: 100%;
+	animation: line4 1s 0.75s linear infinite;
+}
+@keyframes line1{
+	50%,100%{
+		left: 100%;
+	}
+}
+@keyframes line2{
+	50%,100%{
+		top: 100%;
+	}
+}
+@keyframes line3{
+	50%,100%{
+		left: -100%;
+	}
+}
+@keyframes line4{
+	50%,100%{
+		top: -100%;
+	}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Delete</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background:#006666;
+                margin: 0;
+            }
+            video{
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                width:auto;
+                height:auto;
+                z-index: -9999;
+                object-fit:fill;
+            }
+            p{margin: 0}
+            a{margin: 0}
+        </style>
+    <div>
+        <video autoplay loop>
+            <source src="3.mp4" type="video/mp4">
+        </video>
+    </div>
+    </head>
+    <body>
+        <div>
+            <form action="delete.jsp" style="font-size: 55px;text-align: center">
+                RowId : <input type="text" name="id" style="width:150px;height: 40px" placeholder="RowId" required><br>
+                ColumnName :
+                <select style="width:200px;height: 40px" name="cname">
+                    <option value="username">Username</option>
+                    <option value="age">Age</option>
+                    <option value="bookname">Bookname</option>
+                    <option value="booktype">Booktype</option>
+                    <option value="time">Time</option>
+                </select>
+                <br>
+                <input type="submit" value="Delete" style="font-size: 35px;">
+                <a href="analysis.html" style="font-size: 35px;margin-left: 30px">Back</a>
+                <br>
+            </form>
+        </div>
+    </body>
+</html>

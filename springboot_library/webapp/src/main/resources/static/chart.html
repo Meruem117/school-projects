@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Charts</title>
+    <script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.3.0/echarts.min.js"></script>
+    <!-- <script src="chart/echarts.min.js"></script> -->
+    <script src="chart/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="chart/chart.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.js"></script>
+    <script type="text/javascript"
+            src="https://api.map.baidu.com/api?v=2.0&ak=KOmVjPVUAey1G2E8zNhPiuQ6QiEmAwZu&__ec_v__=20190126">
+    </script>
+</head>
+<body onload="initMap(),initBox();">
+
+<center>
+    <p class="title">全国用户分布情况</p><a id="update1" class="update">Update</a><br>
+    <div id="map" class="map"></div>
+    <p class="title">各类图书借阅情况</p><a id="update2" class="update">Update</a><br>
+    <div id="bar" class="box"></div>
+    <div id="pie" class="box"></div>
+</center>
+
+</body>
+</html>
